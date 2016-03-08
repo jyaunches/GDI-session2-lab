@@ -12,6 +12,8 @@ class CreateBudgetViewController: UIViewController {
     
     @IBOutlet weak var endTextField: UITextField!
     @IBOutlet weak var startTextField: UITextField!
+    @IBOutlet weak var amountField: UITextField!
+    @IBOutlet weak var budgetNameField: UITextField!
     
     var datePicker: UIDatePicker?
     override func viewDidLoad() {
@@ -25,6 +27,12 @@ class CreateBudgetViewController: UIViewController {
         
         self.datePicker!.addTarget(self, action: Selector("handleDatePicker:"), forControlEvents: UIControlEvents.ValueChanged)
         
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle(forClass: self.dynamicType))
+        if let budgetDetailsViewController = storyboard.instantiateViewControllerWithIdentifier("BudgetDetailsViewController") as? BudgetDetailsViewController {
+            self.presentViewController(budgetDetailsViewController, animated: true, completion: nil)
+        }
+
     }
     
     func handleDatePicker(sender: UIDatePicker) {
@@ -37,12 +45,6 @@ class CreateBudgetViewController: UIViewController {
         }
     }
 
-    @IBAction func startTapped(sender: AnyObject) {
-        
-    }
-
-    @IBAction func endTapped(sender: AnyObject) {
-        
-    }
 }
+
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4fE-ta-rpT">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -17,62 +17,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Create a Budget" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqk-1e-NOh">
+                                <rect key="frame" x="234" y="80" width="133" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HfX-SA-CKz">
-                                <rect key="frame" x="20" y="107" width="199" height="30"/>
+                                <rect key="frame" x="20" y="139" width="199" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zx4-xH-B2E">
-                                <rect key="frame" x="20" y="76" width="48" height="23"/>
+                                <rect key="frame" x="20" y="108" width="48" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ai-EB-e6P">
-                                <rect key="frame" x="20" y="145" width="62" height="21"/>
+                                <rect key="frame" x="20" y="177" width="62" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OWd-2O-ch2">
-                                <rect key="frame" x="20" y="174" width="199" height="30"/>
+                                <rect key="frame" x="20" y="206" width="199" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Starts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNM-Sn-VI8">
-                                <rect key="frame" x="20" y="212" width="48" height="21"/>
+                                <rect key="frame" x="20" y="244" width="48" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="seP-WL-81r">
-                                <rect key="frame" x="20" y="241" width="199" height="30"/>
+                                <rect key="frame" x="20" y="273" width="199" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="startTapped:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="9pf-6B-Tgb"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwe-4C-IOb">
-                                <rect key="frame" x="20" y="279" width="41" height="21"/>
+                                <rect key="frame" x="20" y="311" width="41" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xTi-cn-202">
-                                <rect key="frame" x="20" y="308" width="199" height="30"/>
+                                <rect key="frame" x="20" y="340" width="199" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="endTapped:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="7Qy-jQ-eKr"/>
-                                </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Create a Budget" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqk-1e-NOh">
-                                <rect key="frame" x="234" y="28" width="133" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -80,12 +74,103 @@
                             <constraint firstItem="Bqk-1e-NOh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="sN8-OZ-Dyg"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="WId-12-HDO">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="89Z-1k-sJ6"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="amountField" destination="OWd-2O-ch2" id="YZw-kp-YK9"/>
+                        <outlet property="budgetNameField" destination="HfX-SA-CKz" id="bnq-jQ-RrD"/>
                         <outlet property="endTextField" destination="xTi-cn-202" id="hXv-VN-LHn"/>
                         <outlet property="startTextField" destination="seP-WL-81r" id="pRV-Pp-95k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056" y="429"/>
+        </scene>
+        <!--Budget Details View Controller-->
+        <scene sceneID="CPJ-lU-tfJ">
+            <objects>
+                <viewController id="4Qw-KI-oMt" customClass="BudgetDetailsViewController" customModule="GDI_session2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cyo-3p-c9B"/>
+                        <viewControllerLayoutGuide type="bottom" id="GHf-CN-Sib"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UJ2-fg-Hae">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Budget Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsE-ZP-Pr6">
+                                <rect key="frame" x="212" y="92" width="177" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$500" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwE-hU-IqN">
+                                <rect key="frame" x="234" y="170" width="133" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="03/01/2016" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9j-tU-owV">
+                                <rect key="frame" x="234" y="203" width="133" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="03/31/2016" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IrO-B2-z6k">
+                                <rect key="frame" x="234" y="236" width="133" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Spending" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izF-a0-KEN">
+                                <rect key="frame" x="234" y="137" width="133" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="izF-a0-KEN" firstAttribute="centerX" secondItem="UJ2-fg-Hae" secondAttribute="centerX" id="2s7-gQ-xm0"/>
+                            <constraint firstItem="IrO-B2-z6k" firstAttribute="centerX" secondItem="UJ2-fg-Hae" secondAttribute="centerX" id="6Lg-uL-sPq"/>
+                            <constraint firstItem="DwE-hU-IqN" firstAttribute="centerX" secondItem="UJ2-fg-Hae" secondAttribute="centerX" id="F0H-2q-u1t"/>
+                            <constraint firstItem="IrO-B2-z6k" firstAttribute="top" secondItem="n9j-tU-owV" secondAttribute="bottom" constant="12" id="F1m-V4-bYE"/>
+                            <constraint firstItem="dsE-ZP-Pr6" firstAttribute="top" secondItem="cyo-3p-c9B" secondAttribute="bottom" constant="72" id="Sgj-Dv-Qol"/>
+                            <constraint firstItem="DwE-hU-IqN" firstAttribute="top" secondItem="izF-a0-KEN" secondAttribute="bottom" constant="12" id="YmN-wV-wRo"/>
+                            <constraint firstItem="dsE-ZP-Pr6" firstAttribute="centerX" secondItem="UJ2-fg-Hae" secondAttribute="centerX" id="b8s-HL-SvQ"/>
+                            <constraint firstItem="n9j-tU-owV" firstAttribute="centerX" secondItem="UJ2-fg-Hae" secondAttribute="centerX" id="ozR-Ba-sVv"/>
+                            <constraint firstItem="izF-a0-KEN" firstAttribute="top" secondItem="dsE-ZP-Pr6" secondAttribute="bottom" constant="24" id="qvx-0d-XuB"/>
+                            <constraint firstItem="n9j-tU-owV" firstAttribute="top" secondItem="DwE-hU-IqN" secondAttribute="bottom" constant="12" id="rDh-Ah-xhy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="budgetAmount" destination="DwE-hU-IqN" id="8Wi-AL-cah"/>
+                        <outlet property="budgetName" destination="izF-a0-KEN" id="LIi-2i-f33"/>
+                        <outlet property="endDate" destination="IrO-B2-z6k" id="fP2-w2-bi7"/>
+                        <outlet property="startDate" destination="n9j-tU-owV" id="2kG-QO-gXR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WvQ-2s-hly" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056" y="1151"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3YX-Ip-ZRW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4fE-ta-rpT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wXC-X7-Ot6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AYf-fQ-rKC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b9r-vt-Cxu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="429"/>
         </scene>
