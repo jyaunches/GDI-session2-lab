@@ -26,15 +26,17 @@ class CreateBudgetViewController: UIViewController {
         self.startTextField.inputView = self.datePicker
         
         self.datePicker!.addTarget(self, action: Selector("handleDatePicker:"), forControlEvents: UIControlEvents.ValueChanged)
-        
+    }
+    
+    @IBAction func saveTapped(sender: AnyObject) {
         
         let storyboard = UIStoryboard(name: "Main", bundle: NSBundle(forClass: self.dynamicType))
         if let budgetDetailsViewController = storyboard.instantiateViewControllerWithIdentifier("BudgetDetailsViewController") as? BudgetDetailsViewController {
-            self.presentViewController(budgetDetailsViewController, animated: true, completion: nil)
+            self.navigationController?.pushViewController(budgetDetailsViewController, animated: true)
+//            self.navigationContpresentViewController(budgetDetailsViewController, animated: true, completion: nil)
         }
-
+        
     }
-    
     func handleDatePicker(sender: UIDatePicker) {
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "dd MMM yyyy"

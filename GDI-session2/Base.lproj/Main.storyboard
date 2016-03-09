@@ -75,7 +75,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WId-12-HDO">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="89Z-1k-sJ6"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="89Z-1k-sJ6">
+                            <connections>
+                                <action selector="saveTapped:" destination="BYZ-38-t0r" id="UkL-6H-sGD"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
@@ -92,7 +96,7 @@
         <!--Budget Details View Controller-->
         <scene sceneID="CPJ-lU-tfJ">
             <objects>
-                <viewController id="4Qw-KI-oMt" customClass="BudgetDetailsViewController" customModule="GDI_session2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BudgetDetailsViewController" id="4Qw-KI-oMt" customClass="BudgetDetailsViewController" customModule="GDI_session2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cyo-3p-c9B"/>
                         <viewControllerLayoutGuide type="bottom" id="GHf-CN-Sib"/>
@@ -132,6 +136,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="izF-a0-KEN" firstAttribute="centerX" secondItem="UJ2-fg-Hae" secondAttribute="centerX" id="2s7-gQ-xm0"/>
                             <constraint firstItem="IrO-B2-z6k" firstAttribute="centerX" secondItem="UJ2-fg-Hae" secondAttribute="centerX" id="6Lg-uL-sPq"/>
@@ -154,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WvQ-2s-hly" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056" y="1151"/>
+            <point key="canvasLocation" x="1056" y="1167"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3YX-Ip-ZRW">
@@ -167,7 +172,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AYf-fQ-rKC"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5Lk-dU-8MG"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9r-vt-Cxu" userLabel="First Responder" sceneMemberID="firstResponder"/>
